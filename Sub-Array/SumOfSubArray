@@ -1,0 +1,24 @@
+// Find the sum of given sub-array
+// 4 2 10 3 12 -2 15
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n;
+	cin >> n;
+	int arr[n];
+	for (int i = 0; i < n; i++)
+	{
+		cin >> arr[i];
+	}
+	int start, end;
+	cin >> start >> end;
+	int sum = 0;
+	for (int i = start; i <= end; i++)
+	{
+		sum = sum + arr[i];
+	}
+	cout << sum << endl;
+}
